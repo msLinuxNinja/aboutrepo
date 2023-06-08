@@ -1,4 +1,3 @@
-
 /* reset de estilos */
 * {
   margin: 0;
@@ -9,18 +8,24 @@
 /* Variables para colores */
 
 :root {
-  --primary-color: teal;
-  --secondary-color: azure;
-  --background-color: #333333;
+  --primary-color: #01c38e;
+  --secondary-color: #132d46;
+  --background-color: #1a1e29;
 }
 
 html {
   background-color: var(--background-color);
   color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.gab-container {
+  gap: 8px;
 }
 
 .center {
@@ -28,27 +33,44 @@ html {
   align-items: center;
 }
 
+.img-box {
+  width: 300px;
+  height: 300px;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
 /* seccion para el hamberger menu */
 .hamburger-menu {
   display: none;
 }
+
 #menu__toggle {
   opacity: 0;
 }
-#menu__toggle:checked + .menu__btn > span {
+
+#menu__toggle:checked+.menu__btn>span {
   transform: rotate(45deg);
 }
-#menu__toggle:checked + .menu__btn > span::before {
+
+#menu__toggle:checked+.menu__btn>span::before {
   top: 0;
   transform: rotate(0deg);
 }
-#menu__toggle:checked + .menu__btn > span::after {
+
+#menu__toggle:checked+.menu__btn>span::after {
   top: 0;
   transform: rotate(90deg);
 }
-#menu__toggle:checked ~ .menu__box {
+
+#menu__toggle:checked~.menu__box {
   left: 0 !important;
 }
+
 .menu__btn {
   position: fixed;
   top: 20px;
@@ -58,9 +80,10 @@ html {
   cursor: pointer;
   z-index: 1;
 }
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
   display: block;
   position: absolute;
   width: 100%;
@@ -68,14 +91,17 @@ html {
   background-color: #616161;
   transition-duration: .25s;
 }
-.menu__btn > span::before {
+
+.menu__btn>span::before {
   content: '';
   top: -8px;
 }
-.menu__btn > span::after {
+
+.menu__btn>span::after {
   content: '';
   top: 8px;
 }
+
 .menu__box {
   display: block;
   position: fixed;
@@ -90,6 +116,7 @@ html {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
 }
+
 .menu__item {
   display: block;
   padding: 12px 24px;
@@ -100,6 +127,7 @@ html {
   text-decoration: none;
   transition-duration: .25s;
 }
+
 .menu__item:hover {
   background-color: #CFD8DC;
 }
@@ -110,7 +138,7 @@ html {
   margin: 0 20px;
   padding: 20px 0;
   border-bottom: 1px solid #ECEFF1;
-  
+
 }
 
 #menu-items {
@@ -127,7 +155,7 @@ a {
 }
 
 @media (max-width: 768px) {
-  
+
   .hamburger-menu {
     display: block;
   }
@@ -144,5 +172,5 @@ a {
 
 .heading-container {
   flex-direction: column;
-  
+
 }
