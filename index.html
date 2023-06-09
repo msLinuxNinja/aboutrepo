@@ -1,133 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Tipografía -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="css/style.css" />
 
-    <title>QantaVerse</title>
-  </head>
+  <!-- Tipografía -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <nav>
-      <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <ul class="menu__box">
-          <li><a class="menu__item" href="#">Inicio</a></li>
-          <li><a class="menu__item" href="#">Acerca de</a></li>
-          <li><a class="menu__item" href="#">Nuestro Equipo</a></li>
-          <li><a class="menu__item" href="#">Valores</a></li>
-        </ul>
-      </div>
+  <title>QantaVerse</title>
+</head>
 
-      <div class="desktop-menu">
-        <img src="assets/isotipo.png" height="50px" width="auto" />
-        <div id="menu-items">
-          <a href="#">Inicio</a>
-          <a href="#">Acerca de</a>
-          <a href="#">Nuestro Equipo</a>
-          <a href="#">Nuestros Valores</a>
-        </div>
-      </div>
+<body>
+  <header class="fixed-header">
+    <nav class="desktop-menu">
+      <img src="assets/isotipo.png" height="50px" width="auto" />
+      <ul id="menu-items">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+        <li><a href="#equipo">Nuestro Equipo</a></li>
+        <li><a href="#valores">Nuestros Valores</a></li>
+      </ul>
     </nav>
-    <header class="heading flex-container center">
-      <div class="flex-container center heading-container">
-        <img src="assets/logo-vertical.png" height="300px" />
-      </div>
-    </header>
-    <main>
 
-      <section class="center ">About us</section>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
 
-      <section class="center text-sectionOne">Our team</section>
-      <div class="flex-container center gap-container team-section">
+      <ul class="menu__box">
+        <li><a class="menu__item" href="#inicio">Inicio</a></li>
+        <li><a class="menu__item" href="#acerca">Acerca de</a></li>
+        <li><a class="menu__item" href="#equipo">Nuestro Equipo</a></li>
+        <li><a class="menu__item" href="#valores">Nuestros Valores</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="heading flex-container center">
+      <img src="assets/logo-vertical.png" height="300px" />
+    </section>
+
+    <section id="acerca" class="section-acerca">
+      <h2>Acerca de</h2>
+      <p>Terminar está parte...</p>
+    </section>
+
+    <section id="equipo" class="center">
+      <h2 class="text-sectionEquipo">Nuestro Equipo</h2>
+      <div class="flex-container center gap-container section-equipo">
         <div>
-          <img
-            class="rounded"
-            src="assets/estebanflores.jpg"
-            width="300"
-            height="300"
-          />
-          <h2>Esteban Flores</h2>
+          <img class="rounded" src="assets/estebanflores.jpg" width="300" height="300" />
+          <h3>Esteban Flores</h3>
           <p>15 años de trabajar</p>
           <p>Coordinador General</p>
         </div>
 
         <div>
-          <img
-            class="rounded"
-            src="assets/eliotrojas.jpeg"
-            width="300"
-            height="300"
-          />
-          <h2>Eliot Rojas</h2>
+          <img class="rounded" src="assets/eliotrojas.jpeg" width="300" height="300" />
+          <h3>Eliot Rojas</h3>
           <p>6 meses de experiencia</p>
           <p>Coordinador de Desarrollo</p>
         </div>
 
         <div>
-          <img
-            class="rounded"
-            src="assets/Esteban Villegas.jpg"
-            width="300"
-            height="300"
-          />
-          <h2>Esteban Villegas</h2>
+          <img class="rounded" src="assets/Esteban Villegas.jpg" width="300" height="300" />
+          <h3>Esteban Villegas</h3>
           <p>Sin experiencia laboral</p>
           <p>Coordinador Soporte</p>
         </div>
 
         <div>
-          <img
-            class="rounded"
-            src="assets/carlosmontero.jpg"
-            width="300"
-            height="300"
-          />
-          <h2>Carlos Montero</h2>
+          <img class="rounded" src="assets/carlosmontero.jpg" width="300" height="300" />
+          <h3>Carlos Montero</h3>
           <p>6 años de experiencia laboral</p>
           <p>Coordinador QA</p>
         </div>
 
         <div>
-          <img
-            class="rounded"
-            src="assets/TirsaMesen.jpg.jpg"
-            width="300"
-            height="300"
-          />
-          <h2>Tirsa Mesén</h2>
+          <img class="rounded" src="assets/TirsaMesen.jpg.jpg" width="300" height="300" />
+          <h3>Tirsa Mesén</h3>
           <p>estudiante de programación</p>
           <p>Coordinador de Soporte</p>
         </div>
 
         <div>
-          <img
-            class="rounded"
-            src="assets/GreyvinCastillo.jpeg"
-            width="300"
-            height="300"
-          />
-          <h2>Greyvin Castillo M.</h2>
+          <img class="rounded" src="assets/GreyvinCastillo.jpeg" width="300" height="300" />
+          <h3>Greyvin Castillo M.</h3>
           <p>10 años de experiencia laboral</p>
           <p>Coordinador de Soporte</p>
         </div>
       </div>
+    </section>
 
-      <section>Mision vision</section>
-    </main>
-    <footer></footer>
-  </body>
+
+    <section id="valores" class="section-valores">
+      <div class="center">
+        <h3>Nosotros</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur consectetur sed, esse quos neque eius ad
+          corrupti labore quas quo magnam est explicabo cum earum sunt dolorum nihil sequi delectus!</p>
+      </div>
+      <div>
+        <h3>Misión</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur consectetur sed, esse quos neque eius ad
+          corrupti labore quas quo magnam est explicabo cum earum sunt dolorum nihil sequi delectus!</p>
+      </div>
+      <div>
+        <h3>Visión</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur consectetur sed, esse quos neque eius ad
+          corrupti labore quas quo magnam est explicabo cum earum sunt dolorum nihil sequi delectus!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <img src="assets/logo-horizontal.png" width="200px">
+      <p>© 2023 QuantaVerse. Todos los derechos reservados.</p>
+      <ul class="flex-container gap-container">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>
