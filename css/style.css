@@ -170,4 +170,6 @@ nav > a:hover {
 
 .rounded {
   border-radius: 50%;
+  object-fit: cover;
 }
+
