@@ -16,7 +16,7 @@
 html {
   background-color: var(--background-color);
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .flex-container {
@@ -25,38 +25,40 @@ html {
 }
 
 .gap-container {
-  gap: 8px;
+  gap: 20px;
 }
 
 .center {
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 /* seccion para el hamburger menu */
 .hamburger-menu {
   display: none;
+  height: 40px;
 }
 
 #menu__toggle {
   opacity: 0;
 }
 
-#menu__toggle:checked+.menu__btn>span {
+#menu__toggle:checked + .menu__btn > span {
   transform: rotate(45deg);
 }
 
-#menu__toggle:checked+.menu__btn>span::before {
+#menu__toggle:checked + .menu__btn > span::before {
   top: 0;
   transform: rotate(0deg);
 }
 
-#menu__toggle:checked+.menu__btn>span::after {
+#menu__toggle:checked + .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
 
-#menu__toggle:checked~.menu__box {
+#menu__toggle:checked ~ .menu__box {
   left: 0 !important;
 }
 
@@ -70,24 +72,24 @@ html {
   z-index: 1;
 }
 
-.menu__btn>span,
-.menu__btn>span::before,
-.menu__btn>span::after {
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
   display: block;
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #616161;
-  transition-duration: .25s;
+  background-color: var(--primary-color);
+  transition-duration: 0.25s;
 }
 
-.menu__btn>span::before {
-  content: '';
+.menu__btn > span::before {
+  content: "";
   top: -8px;
 }
 
-.menu__btn>span::after {
-  content: '';
+.menu__btn > span::after {
+  content: "";
   top: 8px;
 }
 
@@ -101,33 +103,36 @@ html {
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #ECEFF1;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-  transition-duration: .25s;
+  background-color: #fff;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
 }
 
 .menu__item {
   display: block;
   padding: 12px 24px;
   color: #333;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
-  transition-duration: .25s;
+  transition-duration: 0.25s;
 }
 
 .menu__item:hover {
-  background-color: #CFD8DC;
+  background-color: #fff;
+}
+
+nav {
+  border-bottom: 1px solid #fff;
 }
 
 .desktop-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 20px;
   padding: 20px 0;
-  border-bottom: 1px solid #ECEFF1;
-
 }
 
 #menu-items {
@@ -138,13 +143,11 @@ html {
 
 /* seccion para el hamburger menu */
 
-
 a {
   text-decoration: none;
 }
 
 @media (max-width: 768px) {
-
   .hamburger-menu {
     display: block;
   }
@@ -161,15 +164,28 @@ a {
 
 .heading-container {
   flex-direction: column;
-
 }
 
-nav > a:hover {
+nav a {
+  color: #fff;
+}
+
+nav a:hover {
   color: var(--primary-color);
+}
+
+.text-sectionOne {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: var(--primary-color);
+}
+
+.team-section {
+  margin-top: 40px;
 }
 
 .rounded {
   border-radius: 50%;
   object-fit: cover;
 }
-
