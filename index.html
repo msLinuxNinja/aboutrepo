@@ -1,196 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" href="css/style.css" />
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Tipografía -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/isotipo.png">
+    <title>QantaVerse</title>
+  </head>
 
-  <!-- Font-Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <body>
+    <header class="fixed-header">
+      <nav class="desktop-menu">
+        <img src="assets/isotipo.png" height="50px" width="auto" />
+        <ul id="menu-items">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#acerca">Acerca de</a></li>
+          <li><a href="#equipo">Nuestro Equipo</a></li>
+          <li><a href="#valores">Nuestros Valores</a></li>
+        </ul>
+      </nav>
 
-  <title>QantaVerse</title>
-</head>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
 
-<body>
-  <header class="fixed-header">
-    <nav class="desktop-menu">
-      <img src="assets/isotipo.png" height="50px" width="auto" />
-      <ul id="menu-items">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#acerca">Acerca de</a></li>
-        <li><a href="#equipo">Nuestro Equipo</a></li>
-        <li><a href="#valores">Nuestros Valores</a></li>
-      </ul>
-    </nav>
-
-    <div class="hamburger-menu">
-      <input id="menu__toggle" type="checkbox" />
-      <label class="menu__btn" for="menu__toggle">
-        <span></span>
-      </label>
-
-      <ul class="menu__box">
-        <li><a class="menu__item" href="#inicio">Inicio</a></li>
-        <li><a class="menu__item" href="#acerca">Acerca de</a></li>
-        <li><a class="menu__item" href="#equipo">Nuestro Equipo</a></li>
-        <li><a class="menu__item" href="#valores">Nuestros Valores</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <main>
-    <section id="inicio" class="heading flex-container center">
-      <img src="assets/logo-vertical.png" height="300px" />
-    </section>
-
-    <section id="acerca" class="section-acerca">
-      <div class="acerca-div">
-        <div>
-          <img src="assets/engineering_team_about.svg" alt="engineering_team_about" width="100%">
-        </div>
-        <div>
-          <h2>Acerca de QuantaVerse</h2>
-          <p>Una empresa dedicada al desarrollo y provisión de soluciones de software avanzadas para el análisis
-            inteligente
-            de datos. Nuestra empresa se enfoca específicamente en satisfacer las necesidades, brindando herramientas y
-            recursos para adquirir y aplicar habilidades analíticas de vanguardia de manera efectiva.
-            Creemos que el aprendizaje y desarrollo de habilidades cruciales en el campo de la analítica de datos son
-            fundamentales para el éxito tanto académico como profesional.
-            Desarrollar soluciones de software innovadoras y altamente inteligentes, impulsan el crecimiento y el éxito
-            en el ámbito académico y más allá. Nuestra visión es transformar la forma en que se analizan y utilizan los
-            datos a través de soluciones innovadoras y exitosas</p>
-        </div>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#inicio">Inicio</a></li>
+          <li><a class="menu__item" href="#acerca">Acerca de</a></li>
+          <li><a class="menu__item" href="#equipo">Nuestro Equipo</a></li>
+          <li><a class="menu__item" href="#valores">Nuestros Valores</a></li>
+        </ul>
       </div>
-    </section>
+    </header>
 
-    <section id="equipo" class="center">
-      <h2 class="text-sectionEquipo">Nuestro Equipo</h2>
-      <div class="flex-container center gap-container section-equipo">
+    <main>
+      <section id="inicio" class="heading flex-container center">
+        <img src="assets/logo-vertical.png" height="300px" />
+      </section>
 
-        <div>
-          <img class="rounded" src="assets/estebanflores.jpg" width="300" height="300" />
-          <h3>Esteban Flores</h3>
-          <p>15 años de trabajar</p>
-          <p>Coordinador General</p>
+      <section id="acerca" class="section-acerca">
+        <div class="acerca-div">
+          <div>
+            <img
+              src="assets/engineering_team_about.svg"
+              alt="engineering_team_about"
+              width="100%"
+            />
+          </div>
+          <div>
+            <h2>Acerca de QuantaVerse</h2>
+            <p>
+              Una empresa dedicada al desarrollo y provisión de soluciones de
+              software avanzadas para el análisis inteligente de datos. Nuestra
+              empresa se enfoca específicamente en satisfacer las necesidades,
+              brindando herramientas y recursos para adquirir y aplicar
+              habilidades analíticas de vanguardia de manera efectiva. Creemos
+              que el aprendizaje y desarrollo de habilidades cruciales en el
+              campo de la analítica de datos son fundamentales para el éxito
+              tanto académico como profesional. Desarrollar soluciones de
+              software innovadoras y altamente inteligentes, impulsan el
+              crecimiento y el éxito en el ámbito académico y más allá. Nuestra
+              visión es transformar la forma en que se analizan y utilizan los
+              datos a través de soluciones innovadoras y exitosas
+            </p>
+          </div>
         </div>
+      </section>
 
-        <div>
-          <img class="rounded" src="assets/eliotrojas.jpeg" width="300" height="300" />
-          <h3>Eliot Rojas</h3>
-          <p>8 meses de experiencia</p>
-          <p>Coordinador de Desarrollo</p>
-        </div>
+      <section id="equipo" class="center">
+        <h2 class="text-sectionEquipo">Nuestro Equipo</h2>
+        <div class="flex-container center gap-container section-equipo">
+          <div>
+            <img
+              class="rounded"
+              src="assets/estebanflores.jpg"
+              width="300"
+              height="300"
+            />
+            <h3>Esteban Flores</h3>
+            <p>15 años de experiencia laboral</p>
+            <p>Coordinador General</p>
+            <div>
+              <i class="fa fa-brands fa-linkedin" style="color: #ffffff;"></i>
+              <a href="https://www.linkedin.com/in/esfc/" target="_blank">LinkedIn</a>
+            </div>
+          </div>
 
-        <div>
-          <img class="rounded" src="assets/Esteban Villegas.jpg" width="300" height="300" />
-          <h3>Esteban Villegas</h3>
-          <p>Sin experiencia laboral</p>
-          <p>Coordinador Soporte</p>
-        </div>
+          <div>
+            <img
+              class="rounded"
+              src="assets/eliotrojas.jpeg"
+              width="300"
+              height="300"
+            />
+            <h3>Eliot Rojas</h3>
+            <p>8 meses de experiencia</p>
+            <p>Coordinador de Desarrollo</p>
+            <div>
+              <i class="fa fa-brands fa-linkedin" style="color: #ffffff;"></i>
+              <a href="http://linkedin.com/in/eliotrojas/" target="_blank">LinkedIn</a>
+            </div>
+          </div>
 
-        <div>
-          <img class="rounded" src="assets/carlosmontero.jpg" width="300" height="300" />
-          <h3>Carlos Montero</h3>
-          <p>6 años de experiencia laboral</p>
-          <p>Coordinador QA</p>
-        </div>
+          <div>
+            <img
+              class="rounded"
+              src="assets/Esteban Villegas.jpg"
+              width="300"
+              height="300"
+            />
+            <h3>Esteban Villegas</h3>
+            <p>Estudiante de programación</p>
+            <p>Coordinador Soporte</p>
+            <div>
+              <i class="fa fa-brands fa-linkedin" style="color: #ffffff;"></i>
+              <a href="" target="_blank">LinkedIn</a>
+            </div>
+          </div>
 
-        <div>
-          <img class="rounded" src="assets/TirsaMesen.jpg.jpg" width="300" height="300" />
-          <h3>Tirsa Mesén</h3>
-          <p>estudiante de programación</p>
-          <p>Coordinador de Soporte</p>
-        </div>
+          <div>
+            <img
+              class="rounded"
+              src="assets/carlosmontero.jpg"
+              width="300"
+              height="300"
+            />
+            <h3>Carlos Montero</h3>
+            <p>6 años de experiencia laboral</p>
+            <p>Coordinador QA</p>
+            <div>
+              <i class="fa fa-brands fa-linkedin" style="color: #ffffff;"></i>
+              <a href="https://www.linkedin.com/in/carlos-montero-b4b13a79" target="_blank">LinkedIn</a>
+            </div>
+          </div>
 
-        <div>
-          <img class="rounded" src="assets/GreyvinCastillo.jpeg" width="300" height="300" />
-          <h3>Greyvin Castillo M.</h3>
-          <p>10 años de experiencia laboral</p>
-          <p>Coordinador de Soporte</p>
+          <div>
+            <img
+              class="rounded"
+              src="assets/TirsaMesen.jpg.jpg"
+              width="300"
+              height="300"
+            />
+            <h3>Tirsa Mesén</h3>
+            <p>Estudiante de programación</p>
+            <p>Coordinador de Soporte</p>
+            <div>
+              <i class="fa fa-brands fa-linkedin" style="color: #ffffff;"></i>
+              <a href="" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+
+          <div>
+            <img
+              class="rounded"
+              src="assets/GreyvinCastillo.jpeg"
+              width="300"
+              height="300"
+            />
+            <h3>Greyvin Castillo M.</h3>
+            <p>10 años de experiencia laboral</p>
+            <p>Coordinador de Soporte</p>
+            <div>
+              <i class="fa fa-brands fa-linkedin" style="color: #ffffff;"></i>
+              <a href="" target="_blank">LinkedIn</a>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section id="valores" class="section-valores">
+        <div class="valores-div">
+          <div>
+            <h3>Misión</h3>
+            <p>
+              Nuestra misión es desarrollar y ofrecer un software de vanguardia
+              que permita a los estudiantes universitarios adquirir y aplicar
+              habilidades analíticas avanzadas de manera efectiva. A través de
+              nuestra plataforma, buscamos potenciar su capacidad para analizar
+              y utilizar datos complejos, promoviendo así el aprendizaje y el
+              desarrollo de habilidades cruciales en el mundo digital. Nuestro
+              compromiso es brindar una experiencia de usuario excepcional y
+              apoyar el crecimiento intelectual y profesional de los estudiantes
+              en su camino hacia el éxito en el campo de la analítica de datos.
+            </p>
+          </div>
+
+          <div>
+            <h3>Visión</h3>
+            <p>
+              Transformar la forma en que se analizan y se utilizan los datos a
+              través de soluciones de software innovadoras y altamente
+              inteligentes, impulsando el crecimiento y el éxito en el ámbito
+              académico y más allá.
+            </p>
+          </div>
+
+          <div>
+            <h3>Valores</h3>
+            <ul>
+              <li>
+                <strong>Aprendizaje continuo:</strong> Fomentar el desarrollo
+                profesional y personal de los empleados a través del aprendizaje
+                y la formación constante.
+              </li>
+              <li>
+                <strong>Eficiencia:</strong> Buscar la optimización de los
+                procesos y recursos para lograr resultados eficientes.
+              </li>
+              <li>
+                <strong>Innovación:</strong> Fomentar la creatividad y la
+                búsqueda de soluciones novedosas para los desafíos tecnológicos.
+              </li>
+              <li>
+                <strong>Responsabilidad:</strong> Asumir la responsabilidad de
+                los productos y servicios entregados, así como de las decisiones
+                tomadas.
+              </li>
+              <li>
+                <strong>Innovación:</strong> Fomentar la creatividad y la
+                búsqueda de soluciones novedosas para los desafíos tecnológicos.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <img src="assets/logo-horizontal.png" width="200px" />
+        <p>© 2023 QuantaVerse. Todos los derechos reservados.</p>
+        <ul class="flex-container gap-container">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul>
       </div>
-    </section>
-
-    <section id="valores" class="section-valores">
-      <div class="valores-div">
-
-        <div>
-          <h3>Misión</h3>
-          <p>
-            Nuestra misión es desarrollar y ofrecer un software de vanguardia que permita a los estudiantes
-            universitarios
-            adquirir y aplicar habilidades analíticas avanzadas de manera efectiva. A través de nuestra plataforma,
-            buscamos potenciar su capacidad para analizar y utilizar datos complejos, promoviendo así el aprendizaje y
-            el
-            desarrollo de habilidades cruciales en el mundo digital. Nuestro compromiso es brindar una experiencia de
-            usuario excepcional y apoyar el crecimiento intelectual y profesional de los estudiantes en su camino hacia
-            el
-            éxito en el campo de la analítica de datos.
-          </p>
-        </div>
-
-        <div>
-          <h3>Visión</h3>
-          <p>
-            Transformar la forma en que se analizan y se utilizan los datos a través de soluciones de software
-            innovadoras
-            y altamente inteligentes, impulsando el crecimiento y el éxito en el ámbito académico y más allá.
-          </p>
-        </div>
-
-        <div>
-          <h3>Valores</h3>
-          <ul>
-            <li><strong>Aprendizaje continuo:</strong> Fomentar el desarrollo profesional y personal de los empleados a
-              través del aprendizaje y la formación constante.
-            </li>
-            <li><strong>Eficiencia:</strong> Buscar la optimización de los procesos y recursos para lograr resultados
-              eficientes.
-            </li>
-            <li><strong>Innovación:</strong> Fomentar la creatividad y la búsqueda de soluciones novedosas para los
-              desafíos tecnológicos.
-            </li>
-            <li><strong>Responsabilidad:</strong> Asumir la responsabilidad de los productos y servicios entregados, así
-              como de las decisiones tomadas.</li>
-            <li><strong>Innovación:</strong> Fomentar la creatividad y la búsqueda de soluciones novedosas para los
-              desafíos tecnológicos.</li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-container">
-      <img src="assets/logo-horizontal.png" width="200px" />
-      <p>© 2023 QuantaVerse. Todos los derechos reservados.</p>
-      <ul class="flex-container gap-container">
-        <li>
-          <a href="#"><i class="fa fa-facebook"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
